@@ -32,6 +32,6 @@ The focus of this project was to write code which is able to **scale to a larger
 
 ---
 
-The **full project report** is provided here in both **.html** and **.ipynb** format.
+The **full project report** is provided here in **.html**, **.ipynb**, and **.py** format.
 
 N.B. you will have to open the .ipynb file in a Jupyter notebook to make use of the section links within the ToC...
