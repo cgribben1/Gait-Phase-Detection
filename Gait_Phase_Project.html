@@ -14787,22 +14787,35 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 </div>
 </div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h1 id="overlap-=-timesteps/2">overlap = timesteps/2<a class="anchor-link" href="#overlap-=-timesteps/2">&#182;</a></h1><h1 id="stride-=-timesteps---overlap">stride = timesteps - overlap<a class="anchor-link" href="#stride-=-timesteps---overlap">&#182;</a></h1><h1 id="batches-=-%5B%5D">batches = []<a class="anchor-link" href="#batches-=-%5B%5D">&#182;</a></h1><h1 id="for-i-in-range(0,-len(df),-stride):">for i in range(0, len(df), stride):<a class="anchor-link" href="#for-i-in-range(0,-len(df),-stride):">&#182;</a></h1>
-<pre><code>#batch = df.iloc[i:i+timesteps]
-#batches.append(batch)
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[&nbsp;]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#overlap = timesteps/2</span>
 
-</code></pre>
-<h1 id="batches-=-%5Bbatch-for-batch-in-batches-if-len(batch)-==-timesteps%5D">batches = [batch for batch in batches if len(batch) == timesteps]<a class="anchor-link" href="#batches-=-%5Bbatch-for-batch-in-batches-if-len(batch)-==-timesteps%5D">&#182;</a></h1><h1 id="df-=-pd.concat(batches,-ignore_index=True)">df = pd.concat(batches, ignore_index=True)<a class="anchor-link" href="#df-=-pd.concat(batches,-ignore_index=True)">&#182;</a></h1>
+<span class="c1">#stride = timesteps - overlap</span>
+  
+<span class="c1">#batches = []</span>
+  
+<span class="c1">#for i in range(0, len(df), stride):</span>
+
+    <span class="c1">#batch = df.iloc[i:i+timesteps]</span>
+    <span class="c1">#batches.append(batch)</span>
+
+<span class="c1">#batches = [batch for batch in batches if len(batch) == timesteps]</span>
+  
+<span class="c1">#df = pd.concat(batches, ignore_index=True)</span>
+</pre></div>
+
+     </div>
 </div>
 </div>
 </div>
+
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">

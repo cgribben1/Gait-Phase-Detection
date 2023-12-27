@@ -103,20 +103,24 @@
 # 
 # - Having been trimmed from 136 to 94, not all "jog" data is used for training. This would be mitigated by adding more data - if not practically, then artificially by introducing overlap (say 50%) in timestep windows (see proposed implementation below...).
 
-# #overlap = timesteps/2
-# 
-# #stride = timesteps - overlap
-#   
-# #batches = []
-#   
-# #for i in range(0, len(df), stride):
-# 
-#     #batch = df.iloc[i:i+timesteps]
-#     #batches.append(batch)
-# 
-# #batches = [batch for batch in batches if len(batch) == timesteps]
-#   
-# #df = pd.concat(batches, ignore_index=True)
+# In[ ]:
+
+
+#overlap = timesteps/2
+
+#stride = timesteps - overlap
+  
+#batches = []
+  
+#for i in range(0, len(df), stride):
+
+    #batch = df.iloc[i:i+timesteps]
+    #batches.append(batch)
+
+#batches = [batch for batch in batches if len(batch) == timesteps]
+  
+#df = pd.concat(batches, ignore_index=True)
+
 
 # ### Loading Dependencies and Dataset
 
